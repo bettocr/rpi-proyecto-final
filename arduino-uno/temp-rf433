@@ -1,0 +1,26 @@
+#include <RCSwitch.h>
+
+
+#include <rcswitch .h="">
+RCSwitch mySwitch = RCSwitch();
+long envio = 0;
+ 
+// Declaracion de variables
+float tempC;
+int tempPin = 0; // Definimos la entrada en pin A0
+void setup()
+{
+    // Abre puerto serial y lo configura a 9600 bps
+    Serial.begin(9600);
+    mySwitch.enableTransmit(10);
+}
+void loop()
+{
+    // Lee el valor desde el sensor  * 0.00482814
+    tempC = (analogRead(tempPin)* 5.0) / 1024;
+    tempC = ((tempC - 0.5) * 100.0) + 4; // mas x es para calibrar mas o menos la emperatura
+    mySwitch.send(tempC, 8);
+     
+    // Espera cinco segundo para repetir el loop
+    delay(5000);
+}
