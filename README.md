@@ -1,5 +1,4 @@
-rpi-proyecto-final
-==================
+## rpi-proyecto-final
 
 Proyecto Final Curso Introducción Raspberry Pi - Telescopio Universidad Galileo 
 
@@ -10,7 +9,7 @@ Twittear y dar alertas pushover de Temperatura y humedad (Oficina y Cuarto 1)
 Encender abanicos en rack cuando la temperatura sea critica 29
 Encender luces de rack cuando la luz sea muy baja
 
-Hardware
+**Hardware**
 
 - Modulo con sensor de temperatura DTH11
 - Sensor de temperatura TMP36
@@ -20,11 +19,11 @@ Hardware
 - Raspberry Pi modelo B Rev2
 
 
-Software
-- ttytter (http://infodocs.net/articulo/twitter/twitter-desde-l%C3%ADnea-de-comandos-con-ttytter)
-- wiringPI (http://wiringpi.com/download-and-install/)
-- festival (http://ubuntulinuxafondo.blogspot.com/2012/09/instalar-festival-con-voz-en-espanol-en.html)
-- pushover api (https://pushover.net/api)
+**Software**
+- [ttytter](http://infodocs.net/articulo/twitter/twitter-desde-l%C3%ADnea-de-comandos-con-ttytter)
+- [wiringPI](http://wiringpi.com/download-and-install/)
+- [festival](http://ubuntulinuxafondo.blogspot.com/2012/09/instalar-festival-con-voz-en-espanol-en.html)
+- [pushover api](https://pushover.net/api)
 
 
 Para detalles de conexion de Raspberry Pi y el Arduino visitar: http://betto.me/proyectoRpi
